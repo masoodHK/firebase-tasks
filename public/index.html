@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1 class="navbar-item">Taskl Manager</h1>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start is-right">
+                    <ul>
+                        <li>
+                            <a href="login.html" class="navbar-item">Log In</a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="navbar-item">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <p class="is-size-3">Google Firebase demo</p>
+        <form onsubmit="return false" id="form">
+            <div class="field has-addons">
+                <div class="control is-expanded">
+                    <input class="input" type="text" id="inputField" />
+                </div>
+                <div class="control">
+                    <div class="select">
+                        <select class="input">
+                            <option>Select Priority</option>
+                            <option value="high">High</option>
+                            <option value="mediun">Medium</option>
+                            <option value="low">Low</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="control">
+                    <button class="button is-info" onclick="addTasks()">Add Tasks</button>
+                </div>
+            </div>
+        </form>
+        <p class="is-size-5" id="myName"></p>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/start.js"></script>
+</body>
+
+</html>

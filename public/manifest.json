@@ -1,0 +1,8 @@
+{
+    "name": "Fire Progressive Web App",
+    "short_name": "Fire PWA",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "A simply readable Hacker News app."
+}

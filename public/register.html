@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar is-dark">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1 class="navbar-item">Task Manager</h1>
+                <span class="navbar-burger burger" data-target="navbarMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </div>
+            <div id="navbarMenu" class="navbar-menu">
+                <div class="navbar-start is-right">
+                    <ul>
+                        <li>
+                            <a href="login.html" class="navbar-item">Log In</a>
+                        </li>
+                        <li>
+                            <a href="register.html" class="navbar-item">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <form onsubmit="return register()">
+            <div class="card">
+                <div class="card-content">
+                    <p class="title">
+                        Register
+                    </p>
+                    <div class="field">
+                        <label class="label">Username</label>
+                        <div class="control">
+                            <input class="input" id="username" type="text" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Password</label>
+                        <div class="control">
+                            <input class="input" id="password" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Confirm Password</label>
+                        <div class="control">
+                            <input class="input" id="confirmpassword" type="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <label class="label">Email Address</label>
+                        <div class="control">
+                            <input class="input" id="email" type="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="js/start.js"></script>
+</body>
+
+</html>
